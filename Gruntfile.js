@@ -317,6 +317,11 @@ module.exports = function (grunt) {
             }
         },
 
+        socialmediaicons: {
+            files: [
+                '<%= yeoman.dist %>/bower_components/socialmediaicons/*.*'
+            ]
+        },
 
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
@@ -394,14 +399,17 @@ module.exports = function (grunt) {
         'uglify',
         'copy:dist',
         'modernizr',
+        'socialmediaicons',
         'rev',
-        'usemin'/*,
-        'htmlmin'*/
+        'usemin',
+        'htmlmin'
     ]);
 
     grunt.registerTask('default', [
         'newer:jshint',
-        'test',
+        // 'test',
         'build'
     ]);
+
+    grunt.loadNpmTasks('grunt-contrib-watch');
 };
