@@ -345,7 +345,22 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        aws: grunt.file.readJSON('aws-credentials.json'),
+        s3: {
+            options: {
+                accessKeyId: '<%= aws.accessKeyId %>',
+                secretAccessKey: '<%= aws.secretAccessKey %>',
+                bucket: 'douglaslise.com',
+                cache: true
+            },
+            build: {
+                cwd: 'dist/',
+                src: '**'
+            }
         }
+
     });
 
 
@@ -405,4 +420,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.loadNpmTasks('grunt-contrib-watch');
+
+    grunt.loadNpmTasks('grunt-aws');
+
 };
