@@ -317,12 +317,6 @@ module.exports = function (grunt) {
             }
         },
 
-        socialmediaicons: {
-            files: [
-                '<%= yeoman.dist %>/bower_components/socialmediaicons/*.*'
-            ]
-        },
-
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
         modernizr: {
@@ -399,7 +393,6 @@ module.exports = function (grunt) {
         'uglify',
         'copy:dist',
         'modernizr',
-        'socialmediaicons',
         'rev',
         'usemin',
         'htmlmin'

@@ -1,0 +1,3 @@
+[submodule "app/images/socialmediaicons"]
+	path = app/images/socialmediaicons
+	url = https://github.com/paulrobertlloyd/socialmediaicons.git
