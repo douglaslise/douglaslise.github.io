@@ -39,6 +39,7 @@ body {
 ul.sites {
   text-align: center;
   margin-bottom: 0px;
+  padding: 0px;
 }
 ul.sites li {
   display: inline-block;
