@@ -409,8 +409,8 @@ module.exports = function (grunt) {
         'copy:dist',
         'modernizr',
         'rev',
-        'usemin',
-        'htmlmin'
+        'usemin'/*,
+        'htmlmin'*/
     ]);
 
     grunt.registerTask('default', [
