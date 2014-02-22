@@ -67,7 +67,7 @@ module.exports = function (grunt) {
                 port: 9000,
                 livereload: 35729,
                 // Change this to '0.0.0.0' to access the server from outside
-                hostname: 'localhost'
+                hostname: '0.0.0.0'
             },
             livereload: {
                 options: {
@@ -85,7 +85,8 @@ module.exports = function (grunt) {
                         '.tmp',
                         'test',
                         '<%= yeoman.app %>'
-                    ]
+                    ],
+                    hostname: '127.0.0.1'
                 }
             },
             dist: {
