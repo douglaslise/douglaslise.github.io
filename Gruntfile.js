@@ -408,7 +408,7 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy:dist',
-        'modernizr',
+        // 'modernizr',
         'rev',
         'usemin'/*,
         'htmlmin'*/
@@ -416,7 +416,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', [
         'newer:jshint',
-        'test',
+        // 'test',
         'build',
         's3'
     ]);

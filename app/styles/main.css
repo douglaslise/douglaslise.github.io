@@ -1,7 +1,8 @@
 body {
-    background-image: url('/images/background.jpg');
+    background-image: url('/images/background3.jpg');
     background-size: 100% auto;
-    background-color: #53687C;
+    background-color: black;
+    background-repeat: no-repeat;
     font-family: "Lato";
     font-weight: 600;
     color: #333;
