@@ -1,5 +1,4 @@
 // Generated on 2013-12-18 using generator-webapp 0.4.6
-'use strict';
 
 // # Globbing
 // for performance reasons we're only matching one level down:
@@ -8,6 +7,7 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
+    'use strict';
 
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
@@ -384,12 +384,12 @@ module.exports = function (grunt) {
         grunt.task.run(['serve']);
     });
 
-    grunt.registerTask('test', function(target) {
+    grunt.registerTask('test', function (target) {
         if (target !== 'watch') {
             grunt.task.run([
                 'clean:server',
                 'concurrent:test',
-                'autoprefixer',
+                'autoprefixer'
             ]);
         }
 
