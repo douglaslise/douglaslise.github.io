@@ -1,0 +1,61 @@
+body {
+    background-image: url('/images/background3.jpg');
+    background-size: 100% auto;
+    background-color: black;
+    background-repeat: no-repeat;
+    font-family: "Lato";
+    font-weight: 600;
+    color: #333;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    max-width: 600px;
+    font-size: 1.1em;
+    font-weight: 200;
+    line-height: 30px;
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero-unit h1 {
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-top: 5px;
+    margin-left: -60px;
+    margin-right: -60px;
+    text-align: center;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+ul.sites {
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+ul.sites li {
+  display: inline-block;
+}
+p.sites-copyright {
+  text-align: center;
+  line-height: 10px;
+  margin-top: -5px;
+}
+p.sites-copyright a {
+  color: lightgray;
+  font-size: small;
+}
