@@ -1,8 +1,11 @@
 body {
     background-image: url('/images/background6.jpg');
-    background-size: 100% auto;
+    background-size: cover;
+    background-position: center top;
     background-color: #005;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
     font-family: "Lato";
     font-weight: 600;
     color: #333;
@@ -44,4 +47,17 @@ ul.sites {
 
 ul.sites li {
   display: inline-block;
+}
+
+@media (max-width: 640px) {
+  .hero-unit {
+    margin: 20px auto;
+    padding: 30px 20px;
+  }
+
+  .hero-unit h1 {
+    margin-left: -20px;
+    margin-right: -20px;
+    font-size: 2.8em;
+  }
 }
